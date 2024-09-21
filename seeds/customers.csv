@@ -1,0 +1,6 @@
+customer_id,first_name,last_name,email,phone_number,registered_at
+1,Alice,Smith,alice.smith@example.com,1234567890,2022-01-01
+2,Bob,Jones,bob.jones@example.com,2345678901,2022-02-15
+3,Charlie,Brown,charlie.brown@example.com,3456789012,2022-03-20
+4,David,Davis,,4567890123,2022-04-10
+5,Eva,Clark,eva.clark@example.com,5678901234,2022-05-25

@@ -1,0 +1,57 @@
+version: 2
+
+sources:
+  - name: supermarket
+    description: "Supermarket data source"
+    tables:
+      - name: customers
+        description: "Customer data including ID, name, and contact information"
+        columns:
+          - name: customer_id
+            description: "Primary key of the customer"
+          - name: first_name
+            description: "First name of the customer"
+          - name: last_name
+            description: "Last name of the customer"
+          - name: email
+            description: "Email address of the customer"
+          - name: phone_number
+            description: "Phone number of the customer"
+          - name: registered_at
+            description: "Date when the customer registered"
+
+      - name: products
+        description: "Product data including ID, name, category, and price"
+        columns:
+          - name: product_id
+            description: "Primary key of the product"
+          - name: product_name
+            description: "Name of the product"
+          - name: category
+            description: "Category of the product"
+          - name: price
+            description: "Price of the product"
+
+      - name: stores
+        description: "Store data including ID and store name"
+        columns:
+          - name: store_id
+            description: "Primary key of the store"
+          - name: store_name
+            description: "Name of the store"
+
+      - name: transactions
+        description: "Transaction data including customer purchases"
+        columns:
+          - name: transaction_id
+            description: "Primary key of the transaction"
+          - name: customer_id
+            description: "Foreign key to the customer table"
+          - name: product_id
+            description: "Foreign key to the product table"
+          - name: store_id
+            description: "Foreign key to the store table"
+          - name: quantity
+            description: "Quantity of products bought in the transaction"
+          - name: transaction_date
+            description: "Date when the transaction occurred"

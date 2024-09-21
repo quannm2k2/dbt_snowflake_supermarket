@@ -1,0 +1,15 @@
+dbt_snowflake_supermarket:
+  outputs:
+    dev:
+      type: snowflake
+      account: "{{ env_var('SNOWFLAKE_DBT_ACCOUNT') }}"
+      user: "{{ env_var('SNOWFLAKE_DBT_USER') }}"
+      password: "{{ env_var('SNOWFLAKE_DBT_PASS') }}"
+      role: "{{ env_var('SNOWFLAKE_DBT_ROLE') }}"
+      database: "{{ env_var('SNOWFLAKE_DBT_DATABASE') }}"
+      warehouse: "{{ env_var('SNOWFLAKE_DBT_WAREHOUSE') }}"
+      schema: "{{ env_var('SNOWFLAKE_DBT_SCHEMA') }}"
+      private_key_passphrase: "{{ env_var('SNOWFLAKE_DBT_KEY_PASSPHRASE') }}"
+      private_key_path: "{{ env_var('SNOWFLAKE_DBT_KEY_PATH') }}"
+      threads: 1
+  target: dev
