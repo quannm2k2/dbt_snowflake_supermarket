@@ -1,8 +1,3 @@
-# Viết bài về 1 tip trong DBT
-
-Description: dbt_meta_testing, có implement
-Status: Pending
-
 # Giới thiệu về `dbt_meta_testing`
 
 **`dbt_meta_testing`** là một gói mở rộng mạnh mẽ được thiết kế dành riêng cho DBT, cung cấp khả năng tự động hóa các quy trình kiểm tra chất lượng dữ liệu và tài liệu hóa (documentation) trong các dự án DBT. Mặc dù DBT tích hợp sẵn nhiều kiểm thử, nhưng khi quy mô dự án tăng lên và số lượng mô hình dữ liệu phát triển, việc kiểm soát chất lượng dữ liệu thông qua các test và quy tắc trở nên phức tạp. **`dbt_meta_testing`** ra đời để giải quyết những thách thức này.
