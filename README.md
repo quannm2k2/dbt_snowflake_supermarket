@@ -60,12 +60,12 @@
 
 ### Required Tests
 
-- Giúp dự án đảm bảo và tuân thủ kiểm thử `*(dbt test)*` bắt buộc
+- Giúp dự án đảm bảo và tuân thủ kiểm thử `(dbt test)` bắt buộc
 - So sánh kiểm tra yêu cầu và đã cấu hình
 - Cấu hình `+required_tests` phải là `None` hoặc một `dict` có khóa `str` và giá trị `int`
     
     
-    - Ở đây, bạn có thể sử dụng một số biểu thức chính quy (regex)
+    - Ở đây, bạn có thể sử dụng một số biểu thức chính quy (regex) để config
     
     ```yaml
     # dbt_project.yml
@@ -84,9 +84,9 @@
               ".*data_test": 1
               "test_customer_order_summary": 1
               
-          # starts with "check.*" OR ends with "data_test" (note the ".*" regex suffix) OR (note the "|" regex) 
-          # Schema tests are matched against their common names, (eg. not_null, unique, ...).
-    			# Custom schema tests are matched against their name, eg. test_customer_order_summary:
+        # starts with "check.*" OR ends with "data_test" (note the ".*" regex suffix) OR (note the "|" regex) 
+        # Schema tests are matched against their common names, (eg. not_null, unique, ...).
+        # Custom schema tests are matched against their name, eg. test_customer_order_summary:
     ```
     
 - Giống như các cấu hình DBT thông thường. Ta cũng có thể cấu hình ghi đè nên `dbt_project.yml` từ các model:
